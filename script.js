@@ -67,7 +67,7 @@
 
     // and think we make a copy:
     // let person2 = person;
-    // how do we take a copy instead? 
+    // how do we take a copy instead? Using Object.assign()
     let person2 = Object.assign(person);
     console.log(person, person2);
     person.name = 'John';
