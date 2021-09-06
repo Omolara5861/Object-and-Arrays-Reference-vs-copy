@@ -85,6 +85,9 @@
     // console.log(person, person2);
     // person2.socials.twiter = 'debbiegterra';
     // console.log(person2);
+    person3  = JSON.parse(JSON.stringify(person2));
+    person3.socials.twiter = 'debbiegterra';
+    console.log(person2, person3);
     
 
 
