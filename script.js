@@ -68,10 +68,13 @@
     // and think we make a copy:
     // let person2 = person;
     // how do we take a copy instead?
-    let person2 = {...person};
-    console.log(person, person2);
+    
+    // We will hopefully soon see the object ...spread. (It is here Bos. As at when I was solving this in 2021 :)
+    let person3 = {...person2};
+    console.log(person2, person3);
+    person3.name = 'Gabriel';
+    console.log(person2, person3);
 
-    // We will hopefully soon see the object ...spread
 
     // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
 
