@@ -1,4 +1,11 @@
 // start with strings, numbers and booleans
+//The Primitive data type are copied by Value, when copied there values don't change. Let's look at an example 
+    let age = 20;
+    let age2 = age;
+    console.log(age, age2);
+    age2 = 18;
+    console.log(age, age2);
+// so we see that changing the value of age2 didn't affect that of age
 
     // Let's say we have an array
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
