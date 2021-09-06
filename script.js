@@ -31,18 +31,31 @@
     // one way
     players2 = players.slice();
     console.log(players, players2);
+
     players2[3] = 'Messi';
     console.log(players, players2);
 
     // or create a new array and concat the old one in
     let players3 = [].concat(players2);
     console.log(players2, players3);
+
     players3[3] = 'Mbappe';
     console.log(players2, players3);
 
     // or use the new ES6 Spread
-    
+    let players4 = [...players3];
+    console.log(players3, players4);
+
+    players4[3] = 'Zlatan';
+    console.log(players3, players4);
+
     // now when we update it, the original one isn't changed
+    let players5 = Array.from(players4);
+    console.log(players4, players5);
+
+    players5[3] = 'Musa';
+    console.log(players4, players5);
+
 
     // The same thing goes for objects, let's say we have a person object
 
