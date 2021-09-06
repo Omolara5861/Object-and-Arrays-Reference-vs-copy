@@ -64,7 +64,7 @@
       name: 'Wes Bos',
       age: 80,
       socials:  {
-      Twitter: 'kesty_0',
+      twiter: 'kesty_0',
       }
     };
 
@@ -82,5 +82,9 @@
     console.log(person2, person3);
 
     // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it. Added Socials to Person Object
+    // console.log(person, person2);
+    // person2.socials.twiter = 'debbiegterra';
+    // console.log(person2);
+    
 
 
