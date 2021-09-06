@@ -62,7 +62,10 @@
     // with Objects
     const person = {
       name: 'Wes Bos',
-      age: 80
+      age: 80,
+      socials:  {
+      Twitter: 'kesty_0',
+      }
     };
 
     // and think we make a copy:
@@ -78,6 +81,6 @@
     person3.name = 'Gabriel';
     console.log(person2, person3);
 
+    // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it. Added Socials to Person Object
 
-    // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
 
