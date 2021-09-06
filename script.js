@@ -66,8 +66,10 @@
     };
 
     // and think we make a copy:
-
+    // let person2 = person;
     // how do we take a copy instead?
+    let person2 = {...person};
+    console.log(person, person2);
 
     // We will hopefully soon see the object ...spread
 
